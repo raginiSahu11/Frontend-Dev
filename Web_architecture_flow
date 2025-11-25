@@ -1,0 +1,22 @@
+
+Diagram — Basic Web Architecture Flow
+                [Client (Browser)]
+                         |
+                         |  HTTP Request
+                         v
+                  [Web Server]
+                         |
+                         | Communicates via APIs
+                         v
+                 [Application Logic]
+                         |
+                         | SQL Queries
+                         v
+                 [Database (SQL/NoSQL)]
+                         |
+                         | Data Response
+                         v
+                  [Web Server Sends Back Page]
+                         |
+                         v
+                [Client Displays Result]
