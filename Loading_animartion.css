@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loading Animation</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;font-family:system-ui,Arial;
+      background:linear-gradient(180deg,#f0f4ff,#fff)}
+    .loader{
+      display:flex;
+      gap:14px;
+      align-items:flex-end;
+      justify-content:center;
+      width:160px;
+      height:80px;
+    }
+    .dot{
+      width:18px;height:18px;border-radius:50%;
+      background:#2b7aeb;
+      transform: translateY(0);
+      animation: bounce 0.9s ease-in-out infinite;
+    }
+    .dot:nth-child(2){animation-delay: .12s}
+    .dot:nth-child(3){animation-delay: .24s}
+
+    @keyframes bounce{
+      0%{transform: translateY(0)}
+      40%{transform: translateY(-28px)}
+      60%{transform: translateY(-18px)}
+      100%{transform: translateY(0)}
+    }
+    .label{margin-top:12px;text-align:center;color:#334}
+  </style>
+</head>
+<body>
+  <div style="text-align:center">
+    <div class="loader" aria-hidden="true">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="label">Loading…</div>
+  </div>
+</body>
+</html>
