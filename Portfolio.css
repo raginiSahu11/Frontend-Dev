@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio - Ragini Sharma</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --bg:#f5f7fb; --header:#0b3d91; --accent:#ff7a59; --text:#14213d;
+    }
+    html,body{height:100%; margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--text);}
+    body{display:flex; flex-direction:column; background:var(--bg);}
+    header{
+      position:fixed; top:0; left:0; right:0;
+      background:var(--header); color:white; padding:1rem 2rem;
+      display:flex; align-items:center; justify-content:space-between; z-index:1000;
+    }
+    header nav a{color:white; margin-left:1rem; text-decoration:none; font-size:1rem;}
+    main{flex:1; padding:120px 2rem 80px; max-width:1000px; margin:0 auto;}
+    .bio{display:flex; gap:2rem; align-items:center; flex-wrap:wrap;}
+    .bio img{width:12rem; max-width:40%; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.12);}
+    .bio p{font-size:1rem; line-height:1.6;}
+    footer{
+      background:#081231; color:#ddd; padding:1rem 2rem; display:flex; align-items:center; justify-content:center;
+      position:sticky; bottom:0;
+    }
+
+    /* different CSS units usage */
+    .title{font-size:2rem /* default px */;}
+    .sub{font-size:1.2rem; margin-top:0.5rem;}
+    .stats{margin-top:1rem; font-size:1rem; padding:1rem; background:rgba(255,122,89,0.08); border-radius:8px;}
+    .small-note{font-size:0.9rem /* rem relative to root */; margin-top:0.6rem;}
+    .bio p{max-width:60ch;}
+    @media (max-width:600px){
+      header{padding:0.8rem 1rem;}
+      .bio{flex-direction:column; text-align:center;}
+      .bio img{width:50vw;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <strong style="font-size:1.1rem">Ragini Sharma</strong>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="bio">
+      <img src="https://via.placeholder.com/300x300.png?text=Profile" alt="Profile image of Ragini Sharma">
+      <div>
+        <h1 class="title">Hi, I'm Ragini</h1>
+        <p class="sub">A web development student who loves building responsive and accessible interfaces. I focus on clean HTML, semantic markup, and practical CSS.</p>
+        <div class="stats">
+          <span style="font-weight:600">Experience:</span> 1 year learning web dev • <span style="font-weight:600">Interests:</span> UI, UX, Frontend
+        </div>
+        <p class="small-note">Updated: Nov 25, 2025</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Ragini Sharma — All rights reserved.
+  </footer>
+</body>
+</html>
