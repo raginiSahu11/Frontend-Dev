@@ -1,0 +1,20 @@
+Static vs Dynamic Websites
+Static Website
+
+Same content for every user.
+
+No database interaction.
+
+Built with HTML, CSS, simple JS.
+
+Example:
+Portfolio website, company information page.
+
+Dynamic Website
+
+Content changes based on user actions.
+
+Uses backend + database.
+
+Example:
+Facebook, YouTube, Amazon.
