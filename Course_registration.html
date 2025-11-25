@@ -1,0 +1,48 @@
+<!-- 3_course_registration_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course Registration</title>
+  <style>body{font-family:Arial;padding:18px}fieldset{margin-bottom:12px;padding:12px}</style>
+</head>
+<body>
+  <h1>Course Registration Form</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="name">Full Name:</label><br>
+      <input id="name" name="name" type="text" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input id="email" name="email" type="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Selection</legend>
+      <label for="course">Select Course:</label><br>
+      <select id="course" name="course">
+        <option value="web" selected>Web Development - (Beginner)</option>
+        <option value="data">Data Science</option>
+        <option value="ux">UX Design</option>
+      </select>
+    </fieldset>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <h2>Available Schedules</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr><th>Day</th><th>Time</th><th>Instructor</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Monday</td><td>10:00 - 12:00</td><td>Mr. Singh</td></tr>
+      <tr><td>Wednesday</td><td>14:00 - 16:00</td><td>Ms. Patel</td></tr>
+      <tr><td>Saturday</td><td>09:00 - 11:00</td><td>Dr. Kumar</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
