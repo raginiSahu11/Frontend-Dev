@@ -1,0 +1,19 @@
+<!-- 03_two_iframes_intro_hobby.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Two Iframes Example</title>
+  <style>
+    iframe{width:90%;height:300px;display:block;margin:1rem auto;border:1px solid #ccc}
+  </style>
+</head>
+<body>
+  <!-- first iframe: introduction page (can point to a local file or external URL) -->
+  <iframe title="Introduction" srcdoc="<h1>Introduction</h1><p>This is my intro page.</p>"></iframe>
+
+  <!-- second iframe: hobby page -->
+  <iframe title="Hobby" srcdoc="<h1>Hobby</h1><p>This is my favorite hobby page.</p>"></iframe>
+</body>
+</html>
