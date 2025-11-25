@@ -1,0 +1,9 @@
+   [Client (Browser)]
+           |
+           |  HTTP Request
+           v
+      [Web Server]
+           |
+           |  HTTP Response
+           v
+   [Client Displays Page]
