@@ -1,0 +1,23 @@
+3. How a Browser Requests and Displays a Web Page (Step-by-Step)
+
+User enters a URL in the browser.
+
+The browser converts the domain (example.com) to an IP using DNS.
+
+A HTTP/HTTPS request is sent to the server.
+
+The server receives the request and finds the required file.
+
+The server sends the HTML, CSS, JS back to the browser.
+
+The browser parses the HTML and builds:
+
+DOM (Document Object Model) from HTML
+
+CSSOM (CSS Object Model) from CSS
+
+Browser combines DOM + CSSOM → Render Tree.
+
+JavaScript is executed to add interactivity.
+
+Page is displayed.
