@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Team Members</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial, sans-serif; margin:0; padding:2rem; background:#f4f6f8;}
+    .team{display:flex; gap:1rem; justify-content:center; align-items:stretch; max-width:1100px; margin:0 auto;}
+    .card{flex:1; background:white; padding:1.2rem; border-radius:10px; box-shadow:0 10px 20px rgba(0,0,0,0.07); border:1px solid rgba(0,0,0,0.06); display:flex; flex-direction:column; align-items:flex-start;}
+    .card h3{margin:0 0 0.5rem 0;}
+    .card p{margin:0 0 1rem 0; line-height:1.5;}
+    .lead{background:#fff9e6; border:2px solid #ffcb69;}
+    .btn{margin-top:auto; padding:0.6rem 1rem; border-radius:6px; text-decoration:none; background:#0b64c8; color:white;}
+    @media(max-width:600px){
+      .team{flex-direction:column;}
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center">Our Team</h1>
+  <div class="team">
+    <div class="card lead">
+      <h3>Priya Singh</h3>
+      <strong>Team Lead</strong>
+      <p>Leads product design and coordinates the team. Experienced in project planning and client communication.</p>
+      <a class="btn" href="#">View Profile</a>
+    </div>
+
+    <div class="card">
+      <h3>Arjun Patel</h3>
+      <strong>Developer</strong>
+      <p>Frontend developer focusing on responsive UI and accessibility. Skilled in HTML, CSS & JavaScript.</p>
+      <a class="btn" href="#">View Profile</a>
+    </div>
+
+    <div class="card">
+      <h3>Sana Roy</h3>
+      <strong>Designer</strong>
+      <p>UI/UX designer crafting user journeys and high-fidelity prototypes. Passionate about visuals and motion.</p>
+      <a class="btn" href="#">View Profile</a>
+    </div>
+  </div>
+</body>
+</html>
