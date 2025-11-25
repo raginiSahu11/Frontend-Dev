@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Blog Grid</title>
+  <style>
+    :root{
+      --bg:#fafafa; --card:#fff; --accent:#2b7aeb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#222}
+    .container{
+      max-width:1100px;margin:0 auto;padding:20px;display:grid;gap:20px;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 260px 1fr;
+    }
+
+    header{grid-area:header; display:flex; justify-content:space-between; align-items:center}
+    header nav a{margin-left:12px;text-decoration:none;color:var(--accent);font-weight:600}
+
+    aside{grid-area:sidebar;background:var(--card);padding:16px;border-radius:8px;min-height:200px}
+    main{grid-area:main; display:grid; gap:16px; grid-template-columns: repeat(2, 1fr)}
+    footer{grid-area:footer;text-align:center;padding:12px;color:#666}
+
+    .post{background:var(--card);padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(20,20,60,0.04)}
+    .post h2{margin-top:0}
+    .meta{font-size:.85rem;color:#666;margin-bottom:8px}
+
+    /* grid-area layout uses template-areas)
+       below 800px, place sidebar below main */
+    @media (max-width:800px){
+      .container{
+        grid-template-areas:
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+        grid-template-columns:1fr;
+      }
+      main{grid-template-columns:1fr}
+    }
+
+    /* small spacing touches */
+    .categories li{margin-bottom:8px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 style="margin:0">My Blog</h1>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Blogs</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+
+    <aside>
+      <h3>Categories</h3>
+      <ul class="categories">
+        <li>Design</li>
+        <li>Development</li>
+        <li>Travel</li>
+        <li>Photography</li>
+      </ul>
+    </aside>
+
+    <main>
+      <article class="post">
+        <h2>Understanding CSS Grid</h2>
+        <div class="meta">By Ragini — <time datetime="2025-10-05">Oct 05, 2025</time></div>
+        <p>CSS Grid gives precise control to create two-dimensional layouts... (dummy text)</p>
+      </article>
+
+      <article class="post">
+        <h2>Accessibility Tips</h2>
+        <div class="meta">By Ragini — <time datetime="2025-10-02">Oct 02, 2025</time></div>
+        <p>Accessibility is not optional... (dummy text)</p>
+      </article>
+    </main>
+
+    <footer>
+      Contact: youremail@example.com — © 2025 Ragini
+    </footer>
+  </div>
+</body>
+</html>
