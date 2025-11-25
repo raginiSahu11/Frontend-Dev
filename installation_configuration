@@ -1,0 +1,35 @@
+VS Code Installation & Configuration (Explanation)
+
+I cannot take a real screenshot from your computer,
+but here is how your setup should look:
+
+Extensions to install:
+
+HTML CSS Support
+
+Live Server
+
+Prettier
+
+JavaScript (ES6) Snippets
+
+Folder Structure Example:
+
+project/
+  index.html
+  style.css
+  script.js
+
+
+VS Code Preview (Representation):
+
++----------------------------------------+
+| VS Code                                |
+|----------------------------------------|
+| Explorer | index.html | style.css      |
+|----------------------------------------|
+| <HTML code displayed here>             |
+|                                        |
+| -------------------------------------- |
+| Live Server: Running on http://127...  |
++----------------------------------------+
