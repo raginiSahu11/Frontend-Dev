@@ -1,0 +1,30 @@
+Frontend (Client-Side)
+
+What users see and interact with in the browser.
+
+Built with HTML, CSS, JavaScript.
+
+Focus: layout, styles, usability, responsiveness.
+
+Real-world example:
+The visible parts of Amazon—product images, search bar, “Add to Cart” button.
+
+Backend (Server-Side)
+
+Handles logic, authentication, databases, APIs.
+
+Built with Node.js, Java, Python, PHP, etc.
+
+Focus: processing requests, storing/retrieving data, executing logic.
+
+Real-world example:
+When you order food on Swiggy, the backend processes your login, order details, payments, etc.
+
+Full-Stack
+
+Developer who works on both frontend and backend.
+
+Builds user interface, server logic, and database.
+
+Real-world example:
+A developer who creates both the login page and the actual login verification system behind it.
