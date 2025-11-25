@@ -1,0 +1,42 @@
+<!-- 14_movie_database.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Movie Database</title>
+  <style>body{font-family:Arial;margin:18px}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ccc;padding:8px}</style>
+</head>
+<body>
+  <h1>Movie Database</h1>
+  <table border="1" title="List of movies">
+    <caption><strong>Top Movies</strong></caption>
+    <thead>
+      <tr>
+        <th>Movie Name</th>
+        <th>Genre</th>
+        <th>Year</th>
+        <th>IMDB Rating</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>The Example</td>
+        <td>Drama</td>
+        <td>2020</td>
+        <td>8.1</td>
+        <td><a href="https://example.com" target="_blank" rel="noopener">Details</a></td>
+      </tr>
+      <tr>
+        <td colspan="2">Classic Bundle (Multiple Films)</td>
+        <td>Various</td>
+        <td>—</td>
+        <td><a href="#">More</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><small>Note: Ratings are indicative.</small></p>
+</body>
+</html>
