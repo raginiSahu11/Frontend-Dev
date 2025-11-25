@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Destination</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{margin:0; font-family:system-ui, Arial, sans-serif; color:#111;}
+    header, nav, footer{padding:1rem 2rem;}
+    header{background:#123; color:white;}
+    nav{background:#eee; display:flex; gap:1rem; padding:0.8rem 2rem;}
+    nav a{text-decoration:none; color:#123;}
+    main{min-height:70vh;}
+    section{padding:4rem 2rem; color:white; margin:0;}
+    .sec1{background:linear-gradient(135deg,#0f172a, #1e3a8a); background-attachment:fixed;}
+    .sec2{background-image:url('https://via.placeholder.com/1400x800'); background-size:cover; background-position:center; background-attachment:fixed; color:#fff;}
+    .sec3{background:radial-gradient(circle at 10% 20%, #ffb347 0%, #ffcc33 60%); color:#111;}
+    .sec4{background:#f7f7f7; color:#111;}
+    .content{max-width:1100px; margin:0 auto; background:rgba(255,255,255,0.06); padding:1rem; border-radius:8px;}
+    h1{margin:0 0 1rem 0; font-size:2rem;}
+    p{margin:0 0 1rem 0; line-height:1.6;}
+    footer{background:#222; color:#eee; text-align:center;}
+    @media(max-width:800px){
+      section{padding:2rem 1rem;}
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Discover Ville</h1></header>
+  <nav>
+    <a href="#culture">Culture</a>
+    <a href="#sights">Sights</a>
+    <a href="#food">Food</a>
+  </nav>
+  <main>
+    <section id="culture" class="sec1">
+      <div class="content">
+        <h2>Culture & History</h2>
+        <p>Ville has a rich history stretching centuries with festivals, markets and traditional crafts.</p>
+      </div>
+    </section>
+
+    <section id="sights" class="sec2">
+      <div class="content" style="background:rgba(0,0,0,0.35)">
+        <h2>Top Sights</h2>
+        <p>Stroll the old town, visit the hilltop fort, and enjoy panoramic views across the bay.</p>
+      </div>
+    </section>
+
+    <section id="food" class="sec3">
+      <div class="content" style="background:rgba(255,255,255,0.12)">
+        <h2>Local Cuisine</h2>
+        <p>The food blends spices and local produce—street food is a must-try.</p>
+      </div>
+    </section>
+
+    <section class="sec4">
+      <div class="content" style="color:#111">
+        <h2>Plan Your Visit</h2>
+        <p>Best seasons, accommodations, and travel tips with comfortable spacing, margins, and borders to define this section.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Discover Ville</footer>
+</body>
+</html>
