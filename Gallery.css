@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Photo Gallery</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:#fafafa;color:#222;padding:24px}
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:16px;
+      max-width:1100px;margin:0 auto;
+    }
+    figure{
+      position:relative;
+      overflow:hidden;
+      border-radius:10px;
+      box-shadow:0 8px 26px rgba(20,30,60,0.06);
+      margin:0;
+      background:#fff;
+    }
+    img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      display:block;
+      transition: transform 0.5s ease;
+    }
+    figcaption{
+      padding:10px 12px;
+      font-size:.95rem;
+      background:rgba(255,255,255,0.9);
+      position:relative;
+    }
+    figure:hover img{ transform: scale(1.07) }
+
+    /* overlay caption on hover (absolute) */
+    figure .overlay{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      padding:12px;
+      background:linear-gradient(180deg, transparent, rgba(0,0,0,0.45));
+      color:#fff;
+      opacity:0;
+      transform: translateY(10px);
+      transition: opacity .3s ease, transform .3s ease;
+    }
+    figure:hover .overlay{ opacity:1; transform:none }
+
+    @media (max-width:480px){
+      img{height:180px}
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center">Photo Gallery</h1>
+  <div class="gallery" role="list">
+    <figure role="listitem">
+      <img src="https://picsum.photos/id/1015/800/600" alt="Mountain lake">
+      <div class="overlay">Mountain lake at sunrise</div>
+      <figcaption>Mountain lake — <small>Nature</small></figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1025/800/600" alt="Dog in field">
+      <div class="overlay">Happy dog running</div>
+      <figcaption>Happy dog — <small>Pets</small></figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1035/800/600" alt="Forest path">
+      <div class="overlay">Forest path in autumn</div>
+      <figcaption>Autumn path — <small>Travel</small></figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1043/800/600" alt="Beach view">
+      <div class="overlay">Sunny beach</div>
+      <figcaption>Beach — <small>Holiday</small></figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1052/800/600" alt="City skyline">
+      <div class="overlay">City skyline at dusk</div>
+      <figcaption>Skyline — <small>Urban</small></figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1060/800/600" alt="Desert dunes">
+      <div class="overlay">Desert dunes</div>
+      <figcaption>Desert — <small>Adventure</small></figcaption>
+    </figure>
+  </div>
+</body>
+</html>
