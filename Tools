@@ -1,0 +1,8 @@
+4. Tools Required for Web Development Environment
+Tool	Purpose
+VS Code	Code editor for writing HTML, CSS, JS
+Web Browser (Chrome/Edge/Firefox)	To view and test web pages
+Node.js (optional)	For backend JS, running local servers, package manager (npm)
+Git	Version control
+Live Server Extension	Auto-refresh browser on save
+Terminal / CMD	Running scripts, tools, npm commands
