@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Long Article</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Georgia, 'Times New Roman', serif; max-width:900px; margin:2rem auto; line-height:1.8; color:#222; padding:0 1rem;}
+    header h1{margin:0 0 0.2rem 0; font-size:2.2rem;}
+    .meta{color:#666; margin-bottom:1.2rem;}
+    p{margin:1rem 0;}
+    p::first-line{font-weight:700;}
+    p::first-letter{font-size:2.2rem; float:left; margin-right:8px; line-height:1;}
+    mark{background:#fffae6; padding:0 3px; border-radius:3px;}
+    blockquote{border-left:4px solid #ccc; padding:0.8rem 1rem; background:#f9f9f9; margin:1.2rem 0;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Art of Slow Learning</h1>
+    <div class="meta">By Ragini Sharma — Published Nov 25, 2025</div>
+  </header>
+
+  <article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor, magna quis <mark>imperdiet</mark> tincidunt, nibh urna fermentum arcu, non vulputate est ex a augue.</p>
+    <p>Phasellus vitae nisl in lorem porttitor luctus. Integer a neque ac nibh varius vulputate. Curabitur vel nulla id eros aliquet feugiat.</p>
+    <p>Fusce elementum, nibh nec varius tincidunt, lacus mauris ullamcorper libero, at tristique mi est nec justo. Suspendisse potenti.</p>
+    <p>Sed quis ex et nibh luctus pharetra. Donec a ipsum nec arcu facilisis interdum. Praesent convallis orci vitae sapien efficitur dapibus.</p>
+    <p>Morbi a nibh eget libero faucibus ullamcorper. Donec dictum, sem at volutpat volutpat, velit sapien dictum purus, id condimentum magna arcu at urna.</p>
+
+    <blockquote>
+      <p>“Patience in learning brings deeper understanding.”</p>
+    </blockquote>
+  </article>
+</body>
+</html>
