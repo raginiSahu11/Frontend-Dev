@@ -1,0 +1,14 @@
+Five Web Browsers & Rendering Engines
+Browser	Rendering Engine
+Google Chrome	Blink
+Microsoft Edge	Blink
+Mozilla Firefox	Gecko
+Apple Safari	WebKit
+Opera	Blink
+How They Differ
+
+Blink (Chrome/Edge/Opera): Fast, highly optimized, modern web features.
+
+Gecko (Firefox): Independent engine with strong standards support.
+
+WebKit (Safari): Focused on Apple devices and low battery consumption.
