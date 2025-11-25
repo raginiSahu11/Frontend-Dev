@@ -1,0 +1,15 @@
+What Is a Web Server? Examples
+
+A web server is software that receives browser requests and responds with web pages.
+
+Common web servers:
+
+Apache
+
+Nginx
+
+Microsoft IIS
+
+LiteSpeed
+
+Node.js (Express.js server)
