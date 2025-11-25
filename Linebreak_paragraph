@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Line Break Example</title>
+</head>
+<body>
+
+<p>
+I love coding.<br>
+It helps me think creatively.
+</p>
+
+</body>
+</html>
