@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pricing Plans</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial, sans-serif; margin:0; padding:2rem; background:#f4f6f8;}
+    .plans{display:flex; gap:1rem; max-width:1100px; margin:0 auto; align-items:stretch;}
+    .plan{flex:1; background:white; border-radius:10px; padding:1.6rem; text-align:center; box-shadow:0 8px 18px rgba(0,0,0,0.08); transition:transform .25s ease, background .25s ease;}
+    .plan:hover{transform:scale(1.03);}
+    .plan h2{margin-top:0;}
+    .price{font-size:2rem; margin:1rem 0;}
+    .features{list-style:none; padding:0; text-align:left; margin:1rem 0;}
+    .features li{padding:0.3rem 0; border-top:1px solid #f1f1f1;}
+    .btn{display:inline-block; padding:0.6rem 1.2rem; background:#0b64c8; color:white; text-decoration:none; border-radius:6px;}
+    .popular{border:2px solid #ff7a59; background:#fff5ef;}
+    @media(max-width:800px){ .plans{flex-direction:column;} }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center">Pricing</h1>
+  <div class="plans">
+    <div class="plan">
+      <h2>Basic</h2>
+      <div class="price">₹199</div>
+      <ul class="features">
+        <li>1 Project</li>
+        <li>Basic Support</li>
+        <li>Community Access</li>
+      </ul>
+      <a class="btn" href="#">Choose</a>
+    </div>
+
+    <div class="plan popular">
+      <h2>Standard</h2>
+      <div class="price">₹499</div>
+      <ul class="features">
+        <li>5 Projects</li>
+        <li>Priority Support</li>
+        <li>Collaboration Tools</li>
+      </ul>
+      <a class="btn" href="#">Popular</a>
+    </div>
+
+    <div class="plan">
+      <h2>Premium</h2>
+      <div class="price">₹999</div>
+      <ul class="features">
+        <li>Unlimited Projects</li>
+        <li>Phone Support</li>
+        <li>Dedicated Manager</li>
+      </ul>
+      <a class="btn" href="#">Choose</a>
+    </div>
+  </div>
+</body>
+</html>
