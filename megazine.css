@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Magazine Layout</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{background:#efe9e1; margin:0; font-family:Georgia, serif; padding:2rem;}
+    article{background:white; padding:2rem; column-count:3; column-gap:2rem; max-width:1100px; margin:0 auto; text-align:justify;}
+    h1{column-span:all; text-align:center; margin-top:0;}
+    img.float-left{float:left; margin:0 1rem 1rem 0; width:180px;}
+    @media(max-width:900px){ article{column-count:2} }
+    @media(max-width:600px){ article{column-count:1} img.float-left{width:40%;} }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>The Weekend Review</h1>
+    <img class="float-left" src="https://via.placeholder.com/300x200" alt="Decorative image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nibh et arcu faucibus cursus. Mauris luctus odio a mauris aliquet, ut lacinia eros convallis. Integer at velit sed lorem convallis fermentum.</p>
+    <p>Proin id ex a turpis dictum dapibus. Donec sit amet risus id arcu tempor convallis. Curabitur non massa sed mauris mattis efficitur. Vestibulum at tortor sit amet orci facilisis suscipit.</p>
+    <p>Vivamus lobortis, ipsum sit amet pharetra elementum, est risus tincidunt ante, id tincidunt mi dolor sit amet arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Quisque aliquet sem in lectus tincidunt, sit amet placerat arcu interdum. Sed vehicula orci vel magna aliquet consequat. Nullam porttitor, nisi ac consequat dictum, elit mi posuere tortor, eget sodales massa nunc non justo.</p>
+  </article>
+</body>
+</html>
