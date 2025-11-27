@@ -1,0 +1,63 @@
+/* height-width.css */
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ font-family: Arial, sans-serif; min-height:100vh; display:flex; flex-direction:column; }
+header, footer{ text-align:center; padding:12px; background:#fff; }
+main{ flex:1; display:flex; align-items:center; justify-content:center; padding:20px; background:#f4f7fb; }
+
+/* Center boxes horizontally and vertically */
+.center{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  width:100%;
+  max-width:1100px;
+}
+
+/* Base box */
+.box{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  padding:12px;
+  border-radius:8px;
+  text-align:center;
+  overflow:auto; /* demonstrates overflow */
+}
+
+/* Different sizing examples */
+.px{
+  width:300px; /* px unit */
+  height:200px;
+  background:#2d3748;
+}
+.pct{
+  width:50%; /* percent unit relative to container */
+  min-height:120px; /* min-height demonstration */
+  background:#2b6cb0;
+  max-width:420px; /* max-width demonstration */
+}
+.vh{
+  width:22em; /* em unit */
+  height:30vh; /* viewport height */
+  background:#805ad5;
+  max-width:280px; /* max-width */
+}
+
+/* Show overflow by forcing content inside (example) */
+.pct::after{
+  content:" (min-height & max-width applied)";
+  display:block;
+  font-size:0.85rem;
+  color:rgba(255,255,255,0.9);
+  margin-top:8px;
+}
+
+/* Small screens stack vertically */
+@media (max-width:700px){
+  .center{ flex-direction:column; gap:12px; padding:12px; }
+  .pct{ width:100%; max-width:none; }
+}
