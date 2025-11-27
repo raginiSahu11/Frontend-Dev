@@ -1,0 +1,5 @@
+/* Smooth hover for button */
+.btn:hover{
+    opacity: .85;
+    transition: .3s;
+}
