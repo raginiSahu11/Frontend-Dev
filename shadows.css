@@ -1,0 +1,49 @@
+/* shadows.css */
+
+/* Basic layout */
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ font-family: 'Segoe UI', Roboto, Arial, sans-serif; display:flex; flex-direction:column; min-height:100vh; }
+header, footer{ text-align:center; padding:12px; background:#fff; }
+main{ flex:1; display:flex; align-items:center; justify-content:center; padding:30px; background:#f2f6fb; }
+
+/* Cards arranged in a row */
+.cards{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  justify-content:center;
+  flex-wrap:wrap;
+  max-width:1100px;
+}
+
+/* Card base */
+.card{
+  width:260px;
+  padding:18px;
+  border-radius:12px;
+  background:white;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  text-align:left;
+}
+
+/* Different shadow styles */
+.card.soft{ box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+.card.medium{ box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+.card.strong{ box-shadow: 0 12px 30px rgba(0,0,0,0.18); }
+
+/* Headings get text-shadow for depth */
+.card h3{ margin:0 0 8px 0; text-shadow: 0 1px 0 rgba(0,0,0,0.06); }
+
+/* Hover: lift up using larger shadow and translate */
+.card:hover{
+  transform: translateY(-10px);
+}
+.card.soft:hover{ box-shadow: 0 10px 22px rgba(0,0,0,0.14); }
+.card.medium:hover{ box-shadow: 0 18px 36px rgba(0,0,0,0.18); }
+.card.strong:hover{ box-shadow: 0 28px 60px rgba(0,0,0,0.24); }
+
+/* Responsive */
+@media (max-width:780px){
+  .cards{ flex-direction:column; align-items:center; gap:12px; }
+  .card{ width:95%; max-width:420px; }
+}
