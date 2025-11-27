@@ -1,0 +1,5 @@
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:30px}
+.box{padding:20px;background:#f1f1f1;transition:.4s}
+.box:hover{background:linear-gradient(45deg,#6f6,#66f);color:#fff}
+
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
