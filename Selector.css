@@ -1,0 +1,73 @@
+/* selectors.css */
+
+/* Base */
+body{ font-family: Arial, sans-serif; line-height:1.6; padding:16px; background:#fafafa; color:#222; }
+
+/* -------------------------------
+   Attribute selectors
+   [type="text"] selects inputs with type exactly "text"
+   [href^="https"] selects anchors whose href starts with "https"
+   ------------------------------- */
+input[type="text"]{
+  padding:8px 10px;
+  border:2px solid #cbd5e1;
+  border-radius:6px;
+  display:block;
+  margin-bottom:10px;
+}
+a[href^="https"]{
+  color:#0b6bff;
+  text-decoration:underline;
+  margin-right:12px;
+}
+a[href^="http"]{
+  color:#a02b2b;
+}
+
+/* -------------------------------
+   Pseudo-classes and pseudo-elements
+   :hover, :focus, :nth-child(), ::before, ::after
+   ------------------------------- */
+
+/* change list item background on hover and nth-child */
+ul.demo-list{ list-style:none; padding:0; max-width:380px; }
+ul.demo-list li{
+  padding:10px; margin-bottom:6px; background:#fff; border-radius:6px; border:1px solid #e2e8f0;
+}
+/* :nth-child targets odd and even */
+ul.demo-list li:nth-child(odd){ background:#f7fafc; }
+ul.demo-list li:hover{ transform: translateX(6px); transition:transform 0.18s ease; }
+
+/* pseudo-element ::before to add an icon (decorative) */
+ul.demo-list li::before{
+  content:"•";
+  display:inline-block;
+  width:18px;
+  margin-right:8px;
+  color:#6b7280;
+}
+
+/* focus example for input */
+input[type="text"]:focus{
+  outline:3px solid rgba(59,130,246,0.16);
+  border-color:#3b82f6;
+}
+
+/* -------------------------------
+   Combinators:
+   Descendant (space), Child (>), Adjacent sibling (+), General sibling (~)
+   ------------------------------- */
+
+/* descendant: style any span inside .parent */
+.parent span{ font-weight:700; color:#2d2d2d; }
+
+/* child: only direct p children of .parent */
+.parent > p{ padding:8px; background:#fff; border-radius:6px; border:1px solid #e6eef8; }
+
+/* adjacent sibling: style element immediately following .sibling */
+.sibling + .sibling2{ border-left:4px solid #ffb703; padding-left:10px; }
+
+/* general sibling: target any .sibling2 that comes after .sibling */
+.sibling ~ .sibling2{ color:#444; }
+
+/* comment block above explains each selector type */
