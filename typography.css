@@ -1,0 +1,40 @@
+/* typography.css */
+
+/* Base */
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ font-family: Georgia, 'Times New Roman', serif; line-height:1.65; color:#111; padding:20px; background:#fbfbfe; }
+header, footer{ text-align:center; padding:12px; background:#fff; margin-bottom:14px; border-radius:6px; }
+
+/* Article block */
+.article{ max-width:840px; margin:0 auto; background:#fff; padding:24px; border-radius:10px; box-shadow:0 6px 18px rgba(10,10,20,0.04); }
+
+/* Headings: different font families & weights */
+.article h2{ font-family: 'Helvetica Neue', Arial, sans-serif; font-size:1.8rem; letter-spacing:0.4px; margin-bottom:12px; }
+
+/* Paragraph variants */
+.article p{ font-size:1rem; color:#222; margin-bottom:12px; }
+
+/* Styled paragraph demonstrates sizes, spacing */
+.styled{
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size:1.05rem;
+  font-weight:500;
+  letter-spacing:0.3px;
+  line-height:1.8;
+  color:#333;
+}
+
+/* Style mark, strong, em */
+mark{ background:#fff3b0; color:#5b3b00; padding:0.1rem 0.25rem; border-radius:4px; }
+strong{ color:#0b3d91; font-weight:700; }
+em{ color:#b04a4a; font-style:italic; }
+
+/* ::first-letter and ::first-line */
+.article p::first-letter{ font-size:1.8rem; font-weight:700; float:left; line-height:1; margin-right:6px; color:#2b6cb0; }
+.article p::first-line{ text-transform:capitalize; letter-spacing:0.6px; }
+
+/* Ensure readable on small screens */
+@media (max-width:640px){
+  .article{ padding:16px; }
+  .article h2{ font-size:1.4rem; }
+}
