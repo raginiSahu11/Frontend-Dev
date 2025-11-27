@@ -1,0 +1,10 @@
+body{text-align:center;font-family:sans-serif;margin-top:50px;}
+.container{display:flex;justify-content:center;gap:40px;}
+
+.tooltip{position:relative;padding:10px;border:1px solid #000;cursor:pointer;}
+.tip{
+    position:absolute;bottom:130%;left:50%;transform:translateX(-50%);
+    background:black;color:#fff;padding:6px;border-radius:4px;
+    opacity:0;transition:0.3s ease-in-out;
+}
+.tooltip:hover .tip{opacity:1;}
