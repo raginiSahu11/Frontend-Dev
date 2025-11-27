@@ -1,0 +1,7 @@
+body{text-align:center;margin-top:50px;}
+.wrap{display:flex;gap:20px;justify-content:center;}
+
+.box{
+    width:200px;padding:30px;background:skyblue;border:5px solid black;
+}
+.borderBox{box-sizing:border-box;background:pink;}
