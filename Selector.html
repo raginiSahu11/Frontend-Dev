@@ -1,0 +1,41 @@
+<!-- selectors.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+  <header><h1>Advanced CSS Selectors</h1></header>
+  <main>
+    <section>
+      <h2>Attribute Selectors</h2>
+      <input type="text" placeholder="Type here" />
+      <a href="https://example.com">Safe Link (https)</a>
+      <a href="http://insecure.example">Insecure Link (http)</a>
+    </section>
+
+    <section>
+      <h2>Pseudo-classes & Pseudo-elements</h2>
+      <ul class="demo-list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child &gt; selector targets this <span>span</span></p>
+        <p class="sibling">Paragraph followed by a sibling</p>
+        <p class="sibling2">Another paragraph</p>
+      </div>
+    </section>
+  </main>
+  <footer><p>Look at the CSS comments to learn about each selector.</p></footer>
+</body>
+</html>
