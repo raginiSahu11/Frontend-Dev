@@ -1,0 +1,6 @@
+/* element selector */ h1{color:blue;}
+/* class selector */ .highlight{background:yellow;}
+/* id selector */ #unique{font-size:20px;color:green;}
+/* attribute selector */ a[type="text"]{color:red;}
+/* descendant selector */ ul li{font-style:italic;}
+/* child selector */ footer > p{color:purple;}
