@@ -1,0 +1,27 @@
+/* CSS GRID GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+/* Filters Applied */
+img{width:100%;border-radius:10px;transition:.4s;}
+.blur{filter:blur(3px);}
+.gray{filter:grayscale(100%);}
+.sepia{filter:sepia(100%);}
+.bright{filter:brightness(60%);}
+.contrast{filter:contrast(180%);}
+.hue{filter:hue-rotate(120deg);}
+
+/* Hover removes filters */
+figure img:hover{filter:none;transform:scale(1.05);}
+
+/* Caption Styling */
+figcaption{text-align:center;margin-top:5px;font-weight:bold}
+
+/* Responsive Below 600px */
+@media(max-width:600px){
+    .gallery{grid-template-columns:1fr;}
+}
