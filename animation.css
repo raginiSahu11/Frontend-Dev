@@ -1,0 +1,15 @@
+body{height:100vh;display:flex;justify-content:center;align-items:center;gap:30px;}
+
+.box{width:70px;height:70px;border-radius:10px;}
+
+/* move animation */
+.move{background:red;animation:slide 3s infinite;}
+@keyframes slide{0%{transform:translateX(0);}100%{transform:translateX(80px);}}
+
+/* bounce animation */
+.bounce{background:green;animation:bounce 1s infinite alternate ease;}
+@keyframes bounce{from{transform:translateY(0);}to{transform:translateY(-50px);}}
+
+/* color animation */
+.colorShift{background:blue;animation:color 2s infinite alternate;}
+@keyframes color{0%{background:blue;}100%{background:purple;}}
