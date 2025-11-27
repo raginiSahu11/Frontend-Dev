@@ -1,0 +1,8 @@
+body{font-family:Arial;text-align:center;padding:40px;}
+.container{display:flex;gap:20px;justify-content:center;}
+.box{border:1px solid #333;padding:15px;width:150px;}
+
+a:hover{color:red;} /* hover */
+input:focus{border:2px solid blue;} /* focus */
+button:active{transform:scale(0.95);} /* active */
+.list li:nth-child(2){color:green;font-weight:bold;} /* nth-child */
